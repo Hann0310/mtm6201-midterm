@@ -160,3 +160,17 @@ p {
     color: white;
 }       
 
+.rectangle {
+    height: 50px;
+    width: 1000px;
+    background-color: #162C54;
+}
+
+h4 {
+    position: relative;
+    font-family: 'Handel Gothic';
+    font-size: 19px;
+    text-align: right;
+    color: white;
+    margin-right: 18%;
+}
