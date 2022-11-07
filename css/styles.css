@@ -1,0 +1,225 @@
+    @font-face { 
+        font-family: Handel Gothic; src: url('HandelGothic.ttf') format('truetype');
+        font-family: NavFont; src: url('NavFont.ttf') format('truetype');
+    }
+
+    @media only screen and (min-width: 960px) {
+
+        body {
+            position: center;
+            background-color: #162C54;
+            background-image: url(../images/background.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            max-width: fit-content;
+            background-size: cover;
+            margin-top: -1%;
+        }
+
+        .header-image {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: center;
+        }
+
+        .header-bg {
+            width: 100%;
+            height: 40%;
+            position: absolute;
+            z-index: 1;
+            object-fit: cover;
+        }
+
+        nav {
+            display: flex;
+            flex-direction: column;
+            padding: 8% 20% 7%;
+            }
+
+        .logo {
+            width: 30%;
+            height: auto;
+            position: relative;
+            z-index: 2;
+        }
+
+        .nav-links {
+            z-index: 2;
+        }
+
+        .nav-links li{
+            display: inline-block;
+            z-index: 2;
+            padding: 1% 1% 1% 1%;
+        }
+
+        .nav-links li a{
+            text-decoration: none;
+            font-size: 20px;
+            text-transform: uppercase;
+            color: #fff;
+            font-family: NavFont;
+            position: relative;
+        }
+
+        .nav-links li a:after{
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 3px;
+            background-color: #fff;
+            bottom: 0;
+            left: 0;
+            transform: scaleX(0);
+            transform-origin: bottom right;
+            transition: transform 0.25s linear;
+        }
+
+        .nav-links li a:hover:after{
+            transform-origin: bottom left;
+            transform: scaleX(1);
+        }
+        
+        .first-links {
+            display: flex;
+            flex-direction: column-reverse;
+            width: 100%;
+            position: relative;
+            align-items: center;
+            padding-top: 3%;
+        }
+    
+        .button {
+            position: absolute;
+            z-index: 3;
+            padding: 0 0 2% 0;
+            transition: transform 250ms;
+        }
+
+        .button:hover {
+            transform: scale(1.2);
+        }
+
+    
+        .wq {
+            position: absolute;
+            z-index: 2;
+            padding: 0 0 5% 0;
+        }
+
+        .video {
+            position: relative;
+            z-index: 1;
+            width: 1000px;
+        }
+
+        h2 {
+            font-family: 'Handel Gothic';
+            color: white;
+            position: relative;
+            padding-left: 340px;
+            margin-bottom: -50px;
+        }
+        
+        .content {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            padding: 5% 0;
+        }
+
+        .anniversary {
+            position: relative;
+            transition: transform 250ms;
+            padding: 0 2%;
+        }
+
+        .anniversary:hover {
+            transform: scale(1.2);
+        }
+
+        .witch-queen {
+            position: relative;
+            transition: transform 250ms;
+            padding: 0 2%;
+        }
+
+        .witch-queen:hover {
+            transform: scale(1.2);
+        }
+
+        .risen {
+            position: relative;
+            padding: 0 2%;
+            transition: transform 250ms;
+        }
+
+        .risen:hover {
+            transform: scale(1.2);
+        }
+
+        .info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .rectangle {
+            position: relative;
+            z-index: 1;
+            height: 330px;
+            width: 1085px;
+            background-color: #08162D;
+            margin-bottom: 5%;
+        }
+        
+        .hotfix {
+            position: absolute;
+            z-index: 2;
+        }
+
+        p {
+            position: relative;
+            font-family: 'Handel Gothic';
+            font-size: 19px;
+            padding-left: 340px;
+            color: white;
+            margin-top: 80px;;
+        }
+        
+        .rectangle2 {
+            position: relative;
+            z-index: 1;
+            height: 330px;
+            width: 1085px;
+            background-color: #08162D;
+        }
+
+        h3 {
+            font-family: 'Handel Gothic';
+            font-size: 23px;
+            color: white;
+            position: relative;
+            padding-left: 340px;
+            margin-bottom: -50px;
+            margin-top: -310px;
+        }
+
+        .rectangle3 {
+            height: 100px;
+            width: 1400px;
+            background-color: #162C54;
+            margin-top: 14%;
+            margin-left: -10%;
+        }
+
+        h4 {
+            position: relative;
+            font-family: 'Handel Gothic';
+            font-size: 19px;
+            text-align: right;
+            color: white;
+        }
+
+}
