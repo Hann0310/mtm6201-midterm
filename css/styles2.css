@@ -34,7 +34,7 @@
     nav {
         display: flex;
         flex-direction: column;
-        padding: 8% 20% 7%;
+        padding: 4% 20% 7%;
         }
 
     .logo {
@@ -96,82 +96,85 @@
 
     h2 {
         text-align: center;
-        font-size: 30px;
+        font-size: 50px;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #fff;
+        font-family: NavFont;
+        position: relative;
     }
 
     .subcontent {
-        display: grid;
-        grid-template-columns: repeat(8, 1fr);
-        grid-template-rows: repeat(8, 5vw);
-        grid-gap: 5%;
-        
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        position: relative;
+        align-items: center;
     }
 
     .sotl {
         position: relative;
-        width: 500px;
         z-index: 1;
-        grid-column-start: 1;
-        grid-column-end: 4;
-        grid-row-start: 1;
-        grid-row-end: 4;
-        justify-self: end;
+        transition: transform 250ms;
+        padding-top: 5%;
     }
+
+    .sotl:hover {
+        transform: scale(1.2);
+    }
+
 
     .sots {
         position: relative;
-        width: 500px;
         z-index: 1;
-        grid-column-start: 1;
-        grid-column-end: 4;
-        grid-row-start: 4;
-        grid-row-end: 8;
-        justify-self: end;
+        transition: transform 250ms;
+        padding-top: 5%;
+    }
+
+   .sots:hover {
+        transform: scale(1.2);
     }
 
     .sotc {
         position: relative;
-        width: 500px;
         z-index: 1;
-        grid-column-start: 4;
-        grid-column-end: 8;
-        grid-row-start: 1;
-        grid-row-end: 4;
-        justify-self: end;
+        transition: transform 250ms;
+        padding-top: 5%;
+    }
+
+   .sotc:hover {
+        transform: scale(1.2);
     }
 
     .soth {
         position: relative;
-        width: 500px;
         z-index: 1;
-        grid-column-start: 4;
-        grid-column-end: 8;
-        grid-row-start: 4;
-        grid-row-end: 8;
-        justify-self: end;
+        transition: transform 250ms;
+        padding-top: 5%;
+    }
+
+   .soth:hover {
+        transform: scale(1.2);
+    }
+
+    .seasons {
+        display: block;
     }
 
     h3 {
         position: relative;
-        font-family: 'Handel Gothic';
+        font-family: 'NavFont';
         font-size: 30px;
         text-align: left;
         color: white;
-        margin-top: 85%;
     }
 
     p {
         position: relative;
-        font-family: 'Handel Gothic';
+        font-family: 'NavFont';
         font-size: 25px;
         text-align: left;
         color: white;
-    }       
-
-    .rectangle {
-        height: 50px;
-        width: 1000px;
-        background-color: #162C54;
     }
 
     h4 {
@@ -180,6 +183,5 @@
         font-size: 19px;
         text-align: right;
         color: white;
-        margin-right: 18%;
     }
 }
