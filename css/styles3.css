@@ -1,197 +1,189 @@
 @font-face { 
     font-family: Handel Gothic; src: url('HandelGothic.ttf') format('truetype');
+    font-family: NavFont; src: url('NavFont.ttf') format('truetype');
 }
 
-body {
-   background-color: #162C54;
-}
+@media only screen and (min-width: 960px) {
 
-#header {
-    z-index: 0;
-    display: block;
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: -3.8%;
-    size: 50%;
-    width: 1210px;
-    height: auto;
-    overflow: hidden;
-}
+    body {
+        position: center;
+        background-color: #162C54;
+        background-image: url(../images/background.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        max-width: fit-content;
+        background-size: cover;
+        margin-top: -1%;
+    }
 
-#logo {
-    z-index: 1;
-    float: center;
-    position: absolute;
-    width: 25%;
-    height: auto;
-    margin-left: 19%;
-    margin-top: 1%;
-}
+    .header-image {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: center;
+    }
 
-.background {
-    display: block;
-    position: absolute;
-    width: auto;
-    left: -8.9%;
-    height: 1300px;
-    transform: rotate(90deg);
-    margin-top: 28%;
-}
+    .header-bg {
+        width: 100%;
+        height: 40%;
+        position: absolute;
+        z-index: 1;
+        object-fit: cover;
+    }
 
-.h1 {
-    display: block;
-    position: relative;
-    height: fit-content;
-    width: fit-content;
-}
+    nav {
+        display: flex;
+        flex-direction: column;
+        padding: 8% 20% 7%;
+        }
 
-.home {
-    position: relative;
-    display: inline-block;
-    font-size: 30px;
-    padding-left: 21%;
-    padding-right: 30px;
-}
+    .logo {
+        width: 30%;
+        height: auto;
+        position: relative;
+        z-index: 2;
+    }
 
-.seasons {
-    position: relative;
-    display: inline-block;
-    font-size: 30px;
-    padding-left: 50px;
-    padding-right: 30px;
-}
+    .nav-links {
+        z-index: 2;
+    }
 
-.community {
-    position: relative;
-    display: inline-block;
-    font-family: 'Handel Gothic';
-    font-size: 30px;
-    padding-left: 4%;
-    padding-right: 30px;
-}
+    .nav-links li{
+        display: inline-block;
+        z-index: 2;
+        padding: 1% 1% 1% 1%;
+    }
 
-.help {
-    position: relative;
-    display: inline-block;
-    font-size: 30px;
-    padding-left: 90px;
-    padding-right: 30px;
-}
+    .nav-links li a{
+        text-decoration: none;
+        font-size: 20px;
+        text-transform: uppercase;
+        color: #fff;
+        font-family: NavFont;
+        position: relative;
+    }
 
-.store {
-    position: relative;
-    display: inline-block;
-    font-size: 30px;
-    padding-left: 90px;
-    padding-right: 30px;
-}
+    .nav-links li a:after{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        background-color: #fff;
+        bottom: 0;
+        left: 0;
+        transform: scaleX(0);
+        transform-origin: bottom right;
+        transition: transform 0.25s linear;
+    }
 
-a:link, a:visited {
-    color: white;
-    font-family: 'Handel Gothic';
-}
+    .nav-links li a:hover:after{
+        transform-origin: bottom left;
+        transform: scaleX(1);
+    }
 
-.header2 {
-    position: absolute;
-    margin-left: 20.7%;
-    margin-top: 4%;
-    z-index: 1;
-    transition: transform 250ms;
-}
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
 
-.header2:hover {
-    transform: scale(1.05);
-}
+    .header2 {
+        position: relative;
+        z-index: 1;
+        transition: transform 250ms;
+    }
 
-.button1 {
-    position: relative;
-    margin-top: 34%;
-    margin-left: 41.7%;
-    z-index: 1;
-}
+    .header2:hover {
+        transform: scale(1.05);
+    }
 
-h1 {
-    position: relative;
-    text-align: left;
-    margin-top: -6%;
-    margin-left: 5%;
-}
+    .button1 {
+        position: relative;
+        z-index: 2;
+        text-align: center;
+        margin-top: -10%;
+    }
 
-.header3 {
-    position: absolute;
-    margin-left: 20.7%;
-    margin-top: 2%;
-    z-index: 1;
-    transition: transform 250ms;
-}
+    h1 {
+        font-family: 'NavFont';
+        color: white;
+        position: relative;
+        text-align: center;
+        margin-top: -5.5%;
+    }
 
-.header3:hover {
-    transform: scale(1.05);
-}
+    .header3 {
+        position: relative;
+        z-index: 1;
+        transition: transform 250ms;
+        margin-top: 7%;
+    }
 
-.button2 {
-    position: relative;
-    margin-top: 33%;
-    margin-left: 41.7%;
-    z-index: 1;
-}
+    .header3:hover {
+        transform: scale(1.05);
+    }
 
-h2 {
-    position: relative;
-    font-size: 30px;
-    text-align: left;
-    margin-top: -5.5%;
-    margin-left: 1%;
-}
+    .button2 {
+        position: relative;
+        z-index: 2;
+        text-align: center;
+        margin-top: -7%;
+    }
 
-.header4 {
-    position: absolute;
-    margin-left: 20.7%;
-    margin-top: 2%;
-    z-index: 1;
-    transition: transform 250ms;
-}
+    h2 {
+        font-family: 'NavFont';
+        color: white;
+        position: relative;
+        text-align: center;
+        margin-top: -19%;
+    }
 
-.header4:hover {
-    transform: scale(1.05);
-}
+    .header4 {
+        position: relative;
+        z-index: 1;
+        transition: transform 250ms;
+        margin-top: 7%;
+    }
 
-.button4 {
-    position: relative;
-    margin-top: 16%;
-    margin-left: 41.7%;
-    z-index: 1;
-}
+    .header4:hover {
+        transform: scale(1.05);
+    }
 
-h3 {
-    position: relative;
-    font-size: 30px;
-    text-align: left;
-    margin-top: -5.5%;
-    margin-left: 10%;
-}
+    .button4 {
+        position: relative;
+        z-index: 2;
+        text-align: center;
+        margin-top: -7%;
+    }
 
-.button5 {
-    position: relative;
-    margin-top: 8%;
-    margin-left: 41.7%;
-    z-index: 1;
-}
+    h3 {
+        font-family: 'NavFont';
+        color: white;
+        font-size: 30px;
+        position: relative;
+        text-align: center;
+        margin-top: -20%;
+    }
 
-.rectangle {
-    height: 50px;
-    width: 1000px;
-    background-color: #162C54;
-}
+    .button5 {
+        position: relative;
+        z-index: 1;
+        margin-top: 7%;
+    }
 
-h4 {
-    position: relative;
-    font-family: 'Handel Gothic';
-    font-size: 19px;
-    text-align: right;
-    color: white;
-    margin-right: 18%;
-    margin-top: 4%;
-}
+    .rectangle {
+        height: 50px;
+        width: 1000px;
+        background-color: #162C54;
+    }
 
+    h4 {
+        position: relative;
+        font-family: 'Handel Gothic';
+        font-size: 19px;
+        text-align: center;
+        color: white;
+    }
+
+}

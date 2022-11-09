@@ -92,6 +92,8 @@
     .sotr {
         position: relative;
         z-index: 1;
+        margin-top: 0.6%;
+        border: 5px #fff solid;
     }
 
     h2 {
@@ -102,6 +104,10 @@
         color: #fff;
         font-family: NavFont;
         position: relative;
+        margin-bottom: -8.3%;
+        border: 5px black solid;
+        border-radius: 10%;
+        background-color: #162C54;
     }
 
     .subcontent {
@@ -116,7 +122,8 @@
         position: relative;
         z-index: 1;
         transition: transform 250ms;
-        padding-top: 5%;
+        padding-top: 15%;
+        padding-bottom: 5%;
     }
 
     .sotl:hover {
@@ -129,6 +136,7 @@
         z-index: 1;
         transition: transform 250ms;
         padding-top: 5%;
+        padding-bottom: 5%;
     }
 
    .sots:hover {
@@ -140,6 +148,7 @@
         z-index: 1;
         transition: transform 250ms;
         padding-top: 5%;
+        padding-bottom: 5%;
     }
 
    .sotc:hover {
@@ -151,6 +160,7 @@
         z-index: 1;
         transition: transform 250ms;
         padding-top: 5%;
+        padding-bottom: 5%;
     }
 
    .soth:hover {
@@ -159,6 +169,10 @@
 
     .seasons {
         display: block;
+        margin-left: 20%;
+        margin-right: 20%;
+        margin-top: 10%;
+        margin-bottom: 10%;
     }
 
     h3 {
@@ -181,7 +195,7 @@
         position: relative;
         font-family: 'Handel Gothic';
         font-size: 19px;
-        text-align: right;
+        text-align: center;
         color: white;
     }
 }
