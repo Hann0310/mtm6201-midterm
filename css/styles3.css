@@ -5,6 +5,7 @@
 
 @media only screen and (min-width: 960px) {
 
+    /** Header and Nav **/
     body {
         position: center;
         background-color: #162C54;
@@ -81,6 +82,7 @@
         transform: scaleX(1);
     }
 
+    /** Main Content **/
     .content {
         display: flex;
         flex-direction: column;
@@ -170,12 +172,6 @@
         position: relative;
         z-index: 1;
         margin-top: 7%;
-    }
-
-    .rectangle {
-        height: 50px;
-        width: 1000px;
-        background-color: #162C54;
     }
 
     h4 {

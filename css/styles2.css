@@ -5,6 +5,7 @@
 
 @media only screen and (min-width: 960px) {
 
+    /** Header and Nav **/
     body {
         position: center;
         background-color: #162C54;
@@ -81,6 +82,7 @@
         transform: scaleX(1);
     }
 
+    /** Content Header **/
     .content-head {
         display: flex;
         flex-direction: column;
@@ -167,6 +169,7 @@
         transform: scale(1.2);
     }
 
+    /** Content Description **/
     .seasons {
         display: block;
         margin-left: 20%;
